@@ -1,0 +1,61 @@
+{
+  "name": "@lifeos/plugin-sdk",
+  "version": "1.0.0",
+  "description": "Unified plugin system for the LifeOS ecosystem - works in both LifeOS Core and LifeOS Premium",
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "lifeos",
+    "plugin",
+    "sdk",
+    "ecosystem",
+    "life-management",
+    "productivity",
+    "knowledge-management"
+  ],
+  "author": "LifeOS Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lifeos/plugin-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lifeos/plugin-sdk/issues"
+  },
+  "homepage": "https://github.com/lifeos/plugin-sdk#readme",
+  "peerDependencies": {
+    "@angelguirao/lifeos-protocol": "file:../LifeOS-Protocol"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^18.0.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "index.ts",
+    "core/",
+    "interfaces/",
+    "plugins/",
+    "types/",
+    "utils/",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+} 
